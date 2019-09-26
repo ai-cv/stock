@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 '''
@@ -16,7 +15,7 @@ class File:
     def __init__(self,name, type, src):
         self.name = name
         self.type = type
-        self.src = src
+        self.src = src  
         filename = self.src+self.name+'.'+self.type
         self.file = io.open(filename,'w+', encoding = 'utf-8')
     def inputData(self,data):
